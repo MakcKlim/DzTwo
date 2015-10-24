@@ -18,8 +18,8 @@ var
         },
 
         scss : {
-            location    : 'styles/**/*.scss',
-            entryPoint  : 'css/main.css'
+            location    : 'app/styles/**/*.scss',
+            entryPoint  : 'app/css/main.css'
         },
 
         compass : {
@@ -31,7 +31,7 @@ var
 
         browserSync : {
             baseDir : './app',
-            watchPaths : ['*.html', 'css/*.css', 'js/*.js']
+            watchPaths : ['app/*.html', 'app/css/*.css', 'app/js/*.js']
         }
     }
 

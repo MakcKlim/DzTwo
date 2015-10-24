@@ -1,0 +1,6 @@
+mixin nav(TopHead__navigation, items)
+nav.TopHead__navigation
+    ul(class=TopHead__navigation + "-item")
+        each item in items
+            li(class=TopHead__navigation + "-link")
+                a(href="#" class=TopHead__navigation + "-menu")= item

@@ -1,0 +1,17 @@
+header.TopHead
+    .TopHead__socials
+        ul.socials
+        -var socials = ['fb', 'vk', 'tv']
+        each social in socials
+            li.socials__item
+                a(href="#" class="socials__item-link socials__item-link_" + social)
+        .map
+            .map__adr
+            .map__tel
+    .TopHead__logo
+        .TopHead__logo-log
+        .TopHead__logo-search
+        ul.TopHead__logo-nav
+            li.TopHead__logo-nav-item
+            li.TopHead__logo-nav-item
+            li.TopHead__logo-nav-item

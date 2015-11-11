@@ -1,0 +1,27 @@
+$misc-sprite: sprite-map('icons/misc/*.png', $spacing: 70px);
+$grey: #dee1e4;
+$orange: #ff6600;
+.ui-slider-horizontal {
+    height: 3px;
+    background: $grey;
+    @include border-radius(0);
+    border: 0 none;
+    margin-bottom: 14px;
+
+    * {
+        outline: none !important;
+    }
+
+    .ui-slider-range {
+        background: $orange;
+    }
+
+    .ui-slider-handle {
+        @include get-sprite($misc-sprite, slider-control);
+        top: 0;
+        border: 0 none;
+        @include border-radius(0);
+        margin-left: -4px;
+        cursor: pointer;
+    }
+}

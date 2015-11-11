@@ -1,7 +1,6 @@
-Как установить мой проект
+required: ruby;
 
-- 1.git clone https://github.com/MakcKlim/Site
-- 2.cd Site
-- 3.bower i
-- 4.npm i
-- 5.gulp 
+1. gem install compass
+2. gem install sass-globbing
+3. npm install
+4. gulp

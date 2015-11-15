@@ -113,35 +113,35 @@
 												<ul class="filter__choose filter__choose_checkboxes">
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="radio" class="filter__choose-input">
+															<input name="location" type="checkbox" class="filter__choose-input">
 															<div class="filter__choose-elem"></div>
 															<div class="filter__choose-text">Lenovo</div>
 														</label>
 													</li>
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="radio" class="filter__choose-input">
+															<input name="location" type="checkbox" class="filter__choose-input">
 															<div class="filter__choose-elem"></div>
 															<div class="filter__choose-text">Apple</div>
 														</label>
 													</li>
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="radio" class="filter__choose-input">
+															<input name="location" type="checkbox" class="filter__choose-input">
 															<div class="filter__choose-elem"></div>
 															<div class="filter__choose-text">Samsung</div>
 														</label>
 													</li>
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="radio" class="filter__choose-input">
+															<input name="location" type="checkbox" class="filter__choose-input">
 															<div class="filter__choose-elem"></div>
 															<div class="filter__choose-text">Asus</div>
 														</label>
 													</li>
 													<li class="filter__choose-item">
 														<label class="filter__choose-label">
-															<input name="location" type="radio" class="filter__choose-input">
+															<input name="location" type="checkbox" class="filter__choose-input">
 															<div class="filter__choose-elem"></div>
 															<div class="filter__choose-text">Motorola</div>
 														</label>
@@ -250,11 +250,11 @@
 										<div class="sort__title">Вид каталога</div>
 										<div class="sort__view">
 											<ul class="sort__view-list">
-												<li data-view="rows" class="sort__view-item sort__view-rows"><a href="#" class="sort__view-link">
+												<li data-view="rows" class="sort__view-item sort__view_rows"><a href="#" class="sort__view-link">
 														<div class="sort__view-icon"></div></a></li>
-												<li data-view="grids" class="sort__view-item sort__view-grids"><a href="#" class="sort__view-link">
+												<li data-view="grids" class="sort__view-item sort__view_grids"><a href="#" class="sort__view-link">
 														<div class="sort__view-icon"></div></a></li>
-												<li data-view="lines" class="sort__view-item sort__view-lines"><a href="#" class="sort__view-link">
+												<li data-view="lines" class="sort__view-item sort__view_lines"><a href="#" class="sort__view-link">
 														<div class="sort__view-icon"></div></a></li>
 											</ul>
 										</div>
@@ -281,22 +281,36 @@
 													<div class="products__desc">
 														<div class="products__desc-title">Samsung FT-I9031I Galaxy S 3</div>
 														<ul class="products__desc-options">
-															<for>(item in options)
-																<li class="products__option-item products__option-item_colored">
-																	<div class="products__option-key"></div>
-																	<div class="products__option-value"></div>
-																</li>
-															</for>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип симкарты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">OC</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
 														</ul>
-														<div data-rating="3" class="products__rating">
-															<ul class="products__rating-stars">
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item"></li>
-																<li class="products__rating-stars-item"></li>
-															</ul>
-														</div>
+														<div data-rating="3" class="products__rating"></div>
 													</div>
 												</div>
 												<div class="products__right">
@@ -328,22 +342,36 @@
 													<div class="products__desc">
 														<div class="products__desc-title">Samsung FT-I9031I Galaxy S 3</div>
 														<ul class="products__desc-options">
-															<for>(item in options)
-																<li class="products__option-item products__option-item_colored">
-																	<div class="products__option-key"></div>
-																	<div class="products__option-value"></div>
-																</li>
-															</for>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип симкарты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">OC</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
 														</ul>
-														<div data-rating="3" class="products__rating">
-															<ul class="products__rating-stars">
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item"></li>
-																<li class="products__rating-stars-item"></li>
-															</ul>
-														</div>
+														<div data-rating="3" class="products__rating"></div>
 													</div>
 												</div>
 												<div class="products__right">
@@ -375,22 +403,36 @@
 													<div class="products__desc">
 														<div class="products__desc-title">Samsung FT-I9031I Galaxy S 3</div>
 														<ul class="products__desc-options">
-															<for>(item in options)
-																<li class="products__option-item products__option-item_colored">
-																	<div class="products__option-key"></div>
-																	<div class="products__option-value"></div>
-																</li>
-															</for>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип симкарты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">OC</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
 														</ul>
-														<div data-rating="3" class="products__rating">
-															<ul class="products__rating-stars">
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item"></li>
-																<li class="products__rating-stars-item"></li>
-															</ul>
-														</div>
+														<div data-rating="3" class="products__rating"></div>
 													</div>
 												</div>
 												<div class="products__right">
@@ -422,22 +464,36 @@
 													<div class="products__desc">
 														<div class="products__desc-title">Samsung FT-I9031I Galaxy S 3</div>
 														<ul class="products__desc-options">
-															<for>(item in options)
-																<li class="products__option-item products__option-item_colored">
-																	<div class="products__option-key"></div>
-																	<div class="products__option-value"></div>
-																</li>
-															</for>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип симкарты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">OC</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
 														</ul>
-														<div data-rating="3" class="products__rating">
-															<ul class="products__rating-stars">
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item"></li>
-																<li class="products__rating-stars-item"></li>
-															</ul>
-														</div>
+														<div data-rating="3" class="products__rating"></div>
 													</div>
 												</div>
 												<div class="products__right">
@@ -469,22 +525,36 @@
 													<div class="products__desc">
 														<div class="products__desc-title">Samsung FT-I9031I Galaxy S 3</div>
 														<ul class="products__desc-options">
-															<for>(item in options)
-																<li class="products__option-item products__option-item_colored">
-																	<div class="products__option-key"></div>
-																	<div class="products__option-value"></div>
-																</li>
-															</for>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип симкарты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">OC</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
 														</ul>
-														<div data-rating="3" class="products__rating">
-															<ul class="products__rating-stars">
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item"></li>
-																<li class="products__rating-stars-item"></li>
-															</ul>
-														</div>
+														<div data-rating="3" class="products__rating"></div>
 													</div>
 												</div>
 												<div class="products__right">
@@ -516,22 +586,36 @@
 													<div class="products__desc">
 														<div class="products__desc-title">Samsung FT-I9031I Galaxy S 3</div>
 														<ul class="products__desc-options">
-															<for>(item in options)
-																<li class="products__option-item products__option-item_colored">
-																	<div class="products__option-key"></div>
-																	<div class="products__option-value"></div>
-																</li>
-															</for>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип симкарты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">OC</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
 														</ul>
-														<div data-rating="3" class="products__rating">
-															<ul class="products__rating-stars">
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item"></li>
-																<li class="products__rating-stars-item"></li>
-															</ul>
-														</div>
+														<div data-rating="3" class="products__rating"></div>
 													</div>
 												</div>
 												<div class="products__right">
@@ -563,22 +647,36 @@
 													<div class="products__desc">
 														<div class="products__desc-title">Samsung FT-I9031I Galaxy S 3</div>
 														<ul class="products__desc-options">
-															<for>(item in options)
-																<li class="products__option-item products__option-item_colored">
-																	<div class="products__option-key"></div>
-																	<div class="products__option-value"></div>
-																</li>
-															</for>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип симкарты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">OC</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
 														</ul>
-														<div data-rating="3" class="products__rating">
-															<ul class="products__rating-stars">
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item"></li>
-																<li class="products__rating-stars-item"></li>
-															</ul>
-														</div>
+														<div data-rating="3" class="products__rating"></div>
 													</div>
 												</div>
 												<div class="products__right">
@@ -610,22 +708,36 @@
 													<div class="products__desc">
 														<div class="products__desc-title">Samsung FT-I9031I Galaxy S 3</div>
 														<ul class="products__desc-options">
-															<for>(item in options)
-																<li class="products__option-item products__option-item_colored">
-																	<div class="products__option-key"></div>
-																	<div class="products__option-value"></div>
-																</li>
-															</for>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип симкарты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">OC</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
 														</ul>
-														<div data-rating="3" class="products__rating">
-															<ul class="products__rating-stars">
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item"></li>
-																<li class="products__rating-stars-item"></li>
-															</ul>
-														</div>
+														<div data-rating="3" class="products__rating"></div>
 													</div>
 												</div>
 												<div class="products__right">
@@ -657,22 +769,36 @@
 													<div class="products__desc">
 														<div class="products__desc-title">Samsung FT-I9031I Galaxy S 3</div>
 														<ul class="products__desc-options">
-															<for>(item in options)
-																<li class="products__option-item products__option-item_colored">
-																	<div class="products__option-key"></div>
-																	<div class="products__option-value"></div>
-																</li>
-															</for>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Тип симкарты</div>
+																<div class="products__option-value">Micro-SIM</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">Количество SIM-карт</div>
+																<div class="products__option-value">1</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Цвет</div>
+																<div class="products__option-value">Белый</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">OC</div>
+																<div class="products__option-value">Android</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">Связь 3G</div>
+																<div class="products__option-value">Есть</div>
+															</li>
+															<li class="products__option-item">
+																<div class="products__option-key">4G (LTE)</div>
+																<div class="products__option-value">Нет</div>
+															</li>
+															<li class="products__option-item products__option-item_colored">
+																<div class="products__option-key">GPS-модуль</div>
+																<div class="products__option-value">Есть</div>
+															</li>
 														</ul>
-														<div data-rating="3" class="products__rating">
-															<ul class="products__rating-stars">
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item products__rating-stars-item_filled"></li>
-																<li class="products__rating-stars-item"></li>
-																<li class="products__rating-stars-item"></li>
-															</ul>
-														</div>
+														<div data-rating="3" class="products__rating"></div>
 													</div>
 												</div>
 												<div class="products__right">

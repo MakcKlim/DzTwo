@@ -94,7 +94,7 @@ gulp.task('plugins', function() {
 gulp.task('scripts', function() {
 	return gulp.src(paths.js.location)
 		.pipe(plumber())
-		.pipe(uglify())
+		//.pipe(uglify())
 		.pipe(rename('main.min.js'))
 		.pipe(gulp.dest(paths.js.destination));
 });

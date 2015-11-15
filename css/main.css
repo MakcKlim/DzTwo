@@ -3489,7 +3489,7 @@ body .ui-tooltip {
   vertical-align: middle;
   margin-right: 65px;
 }
-.addressbefore {
+.address:before {
   content: '';
   background: url('../img/icons/misc-sdbfb8a0aa9.png') 0 -80px no-repeat;
   height: 16px;
@@ -3508,7 +3508,7 @@ body .ui-tooltip {
   text-decoration: none;
   margin-right: 25px;
 }
-.phonebefore {
+.phone:before {
   content: '';
   display: inline-block;
   vertical-align: middle;
@@ -3661,6 +3661,11 @@ body .ui-tooltip {
 .products__item {
   border-top: 1px solid #dee1e4;
 }
+.products__item:hover {
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
 .products__item:first-child {
   border-top: 0 none;
 }
@@ -3804,12 +3809,6 @@ body .ui-tooltip {
   color: #010101;
   margin-bottom: 20px;
   padding-top: 7px;
-}
-
-.products__option-item {
-  display: inline;
-  font-size: 14px;
-  line-height: 16px;
 }
 
 .products__desc-options {
@@ -4162,6 +4161,11 @@ body .ui-tooltip {
 }
 
 /*----- filter -----*/
+.filter__content {
+  display: none;
+  margin-top: 30px;
+}
+
 .filter__item {
   padding: 12px 26px;
   border: 1px solid #dee1e4;
@@ -4169,13 +4173,24 @@ body .ui-tooltip {
 .filter__item:first-child {
   border-top: 0 none;
 }
-
-.filter__choose {
-  margin-bottom: 13px;
+.filter__item.active .filter__title:after {
+  background: url('../img/icons/select-tr-s1852ba606f.png') 0 -79px no-repeat;
+  height: 9px;
+  width: 13px;
 }
 
 .filter__title {
-  margin-bottom: 18px;
+  padding-right: 30px;
+  position: relative;
+}
+.filter__title:after {
+  content: '';
+  background: url('../img/icons/select-tr-s1852ba606f.png') 0 0 no-repeat;
+  height: 9px;
+  width: 13px;
+  position: absolute;
+  top: 7px;
+  right: 10px;
 }
 
 .filter__choose-item {
@@ -4192,6 +4207,10 @@ body .ui-tooltip {
   font-family: 'Open Sans';
   font-weight: 600;
   text-decoration: none;
+}
+
+.filter__choose {
+  margin-bottom: 13px;
 }
 
 .filter__choose-label {
@@ -4462,49 +4481,49 @@ body .ui-tooltip {
   padding-left: 20px;
 }
 
-.sort__view-rows .sort__view-icon {
+.sort__view_rows .sort__view-icon {
   background: url('../img/icons/views-sa675819b52.png') 0 -430px no-repeat;
   height: 16px;
   width: 16px;
 }
-.sort__view-rows:hover .sort_view-icon {
+.sort__view_rows:hover .sort_view-icon {
   background: url('../img/icons/views-sa675819b52.png') 0 -344px no-repeat;
   height: 16px;
   width: 16px;
 }
-.sort__view-rows.active .sort_view-icon {
+.sort__view_rows.active .sort_view-icon {
   background: url('../img/icons/views-sa675819b52.png') 0 -344px no-repeat;
   height: 16px;
   width: 16px;
 }
 
-.sort__view-grids .sort__view-icon {
+.sort__view_grids .sort__view-icon {
   background: url('../img/icons/views-sa675819b52.png') 0 -86px no-repeat;
   height: 16px;
   width: 16px;
 }
-.sort__view-grids:hover .sort_view-icon {
+.sort__view_grids:hover .sort_view-icon {
   background: url('../img/icons/views-sa675819b52.png') 0 0 no-repeat;
   height: 16px;
   width: 16px;
 }
-.sort__view-grids.active .sort_view-icon {
+.sort__view_grids.active .sort_view-icon {
   background: url('../img/icons/views-sa675819b52.png') 0 0 no-repeat;
   height: 16px;
   width: 16px;
 }
 
-.sort__view-lines .sort__view-icon {
+.sort__view_lines .sort__view-icon {
   background: url('../img/icons/views-sa675819b52.png') 0 -258px no-repeat;
   height: 16px;
   width: 16px;
 }
-.sort__view-lines:hover .sort_view-icon {
+.sort__view_lines:hover .sort_view-icon {
   background: url('../img/icons/views-sa675819b52.png') 0 -172px no-repeat;
   height: 16px;
   width: 16px;
 }
-.sort__view-lines.active .sort_view-icon {
+.sort__view_lines.active .sort_view-icon {
   background: url('../img/icons/views-sa675819b52.png') 0 -172px no-repeat;
   height: 16px;
   width: 16px;

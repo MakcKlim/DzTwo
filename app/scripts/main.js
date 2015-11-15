@@ -17,7 +17,7 @@ var SliderWidget = (function(){
 
             $('.filter__slider-element').each(function() {
                 var 
-                    $tnis =$(this),
+                    $this =$(this),
                     min = parseInt($this.data('min')),
                     max = parseInt($this.data('max'));
                 $this.slider({
@@ -100,18 +100,19 @@ var ViewStateChange = (function(){
             _previousClass = listOfItems.attr('class');
         }
             _changeActiveClass($this);
-            listOfItems.attr('class', _previousClass + '' + classOfViewState);
+            listOfItems.attr('class', _previousClass + ' ' + classOfViewState);
     };
 
     var _changeActiveClass = function ($this) {
         $this
-            .closest('sort__view-item').addClass('active')
-            .sibLings().removeClass('activ');
+            .closest('.sort__view-item').addClass('active')
+            .siblings().removeClass('active');
+            console.log ($this);
     }
 
     return {
         init: function(){
-            $('sort__view-link').on('click', function(e) {
+            $('.sort__view-link').on('click', function(e) {
                 e.preventDefault();
                 _changeState($(this));
             });
@@ -149,7 +150,44 @@ var Slideshow = (function() {
     }
 }());
 
-$(document).ready(function() {
+var Accordeon = (function(){
+
+    var _openSection = function($this){
+        var
+            container = $this.closest('.filter__item'),
+            content = container.find('.filter__content'),
+            otherContent = $this.closest('.filter').find('.filter__content');
+
+
+
+        if (!container.hasClass('active')) {
+            otherContent.slideUp().closest('.filter__item').removeClass('active');
+
+            container.addClass('active');
+            content.stop(true, true).slideDown();
+        } else {
+            container.removeClass('active');
+            content.stop(true, true).slideUp();
+        }
+    }
+
+    return {
+        init: function(){
+            $('.filter__title-link').on('click', function(e){
+                e.preventDefault();
+                _openSection($(this));
+
+            });
+        }
+    }
+
+}());
+
+$(document).ready(function(){
+
+    if ($('.filter').length) {
+        Accordeon.init();
+    }
 
     if ($('.products__slideshow').length) {
         Slideshow.init();
@@ -161,26 +199,26 @@ $(document).ready(function() {
         RatingWidget.init();
     }
 
-     if ($('.filter__slider-element').length) {
-       SliderWidget.init(); 
+    if ($('.filter__slider-element').length) {
+        SliderWidget.init();
     }
 
     if ($('.sort__select-elem').length) {
-       $('.sort__select-elem').select2({
-        minimumResultsForSearch: Infinity
-       }); 
+        $('.sort__select-elem').select2({
+            minimumResultsForSearch: Infinity
+        });
     }
-    $('.filter__reset').on('click', function(){
+    $('.filter__reset').on('click', function(e){
         e.preventDefault();
 
-        var $this = $(this),
-        container = this.closest('.filter__item'),
-        checkboxes = container.find('input:checkbox');
-
-        checkboxes.each (function() {
-            $(this).removeProp('checked');
-        });
+        var
+            $this = $(this),
+            container = $this.closest('.filter__item'),
+            checkboxes = container.find('input[type = "checkbox"]');
+                console.log(checkboxes);
+        checkboxes.prop('checked', false);
     });
+
 
 /*----- columnizer -----*/
 $('.attension__text').columnize({ 

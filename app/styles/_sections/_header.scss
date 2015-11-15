@@ -58,7 +58,7 @@ $socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
     @include inlineblock(middle);
     margin-right: 65px;
 
-    &before {
+    &:before {
         content: '';
         @include get-sprite($misc-sprite, point);
         @include inlineblock(middle);
@@ -73,7 +73,7 @@ $socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
     text-decoration: none;
     margin-right: 25px;
 
-    &before {
+    &:before {
        content: '';
        @include inlineblock(middle);
        @include get-sprite($misc-sprite, tel);

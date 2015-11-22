@@ -3456,22 +3456,58 @@ body .ui-tooltip {
   position: absolute;
 }
 
-.socials__item_fb .socials__icon {
-  background: url('../img/icons/socials-sa84393951b.png') 0 0 no-repeat;
-  height: 26px;
-  width: 26px;
+.socials__item_fb .socials__icon:after {
+  background: url('../img/icons/socials-s64c3c3489b.png') 0 -82px no-repeat;
+  height: 12px;
+  width: 6px;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+}
+.socials__item_fb .socials__icon:hover:after {
+  background: url('../img/icons/socials-s64c3c3489b.png') 0 0 no-repeat;
+  height: 12px;
+  width: 6px;
 }
 
-.socials__item_vk .socials__icon {
-  background: url('../img/icons/socials-sa84393951b.png') 0 -192px no-repeat;
-  height: 26px;
-  width: 27px;
+.socials__item_vk .socials__icon:after {
+  background: url('../img/icons/socials-s64c3c3489b.png') 0 -410px no-repeat;
+  height: 12px;
+  width: 9px;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+}
+.socials__item_vk .socials__icon:hover:after {
+  background: url('../img/icons/socials-s64c3c3489b.png') 0 -328px no-repeat;
+  height: 12px;
+  width: 9px;
 }
 
-.socials__item_tv .socials__icon {
-  background: url('../img/icons/socials-sa84393951b.png') 0 -96px no-repeat;
-  height: 26px;
-  width: 26px;
+.socials__item_tv .socials__icon:after {
+  background: url('../img/icons/socials-s64c3c3489b.png') 0 -246px no-repeat;
+  height: 12px;
+  width: 15px;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+}
+.socials__item_tv .socials__icon:hover:after {
+  background: url('../img/icons/socials-s64c3c3489b.png') 0 -164px no-repeat;
+  height: 12px;
+  width: 15px;
 }
 
 .header__left {
@@ -4482,49 +4518,49 @@ body .ui-tooltip {
 }
 
 .sort__view_rows .sort__view-icon {
-  background: url('../img/icons/views-sa675819b52.png') 0 -430px no-repeat;
+  background: url('../img/icons/views-sfaf4eff0b0.png') 0 -430px no-repeat;
   height: 16px;
   width: 16px;
 }
-.sort__view_rows:hover .sort_view-icon {
-  background: url('../img/icons/views-sa675819b52.png') 0 -344px no-repeat;
+.sort__view_rows:hover .sort__view-icon {
+  background: url('../img/icons/views-sfaf4eff0b0.png') 0 -344px no-repeat;
   height: 16px;
   width: 16px;
 }
-.sort__view_rows.active .sort_view-icon {
-  background: url('../img/icons/views-sa675819b52.png') 0 -344px no-repeat;
+.sort__view_rows.active .sort__view-icon {
+  background: url('../img/icons/views-sfaf4eff0b0.png') 0 -344px no-repeat;
   height: 16px;
   width: 16px;
 }
 
 .sort__view_grids .sort__view-icon {
-  background: url('../img/icons/views-sa675819b52.png') 0 -86px no-repeat;
+  background: url('../img/icons/views-sfaf4eff0b0.png') 0 -86px no-repeat;
   height: 16px;
   width: 16px;
 }
-.sort__view_grids:hover .sort_view-icon {
-  background: url('../img/icons/views-sa675819b52.png') 0 0 no-repeat;
+.sort__view_grids:hover .sort__view-icon {
+  background: url('../img/icons/views-sfaf4eff0b0.png') 0 0 no-repeat;
   height: 16px;
   width: 16px;
 }
-.sort__view_grids.active .sort_view-icon {
-  background: url('../img/icons/views-sa675819b52.png') 0 0 no-repeat;
+.sort__view_grids.active .sort__view-icon {
+  background: url('../img/icons/views-sfaf4eff0b0.png') 0 0 no-repeat;
   height: 16px;
   width: 16px;
 }
 
 .sort__view_lines .sort__view-icon {
-  background: url('../img/icons/views-sa675819b52.png') 0 -258px no-repeat;
+  background: url('../img/icons/views-sfaf4eff0b0.png') 0 -258px no-repeat;
   height: 16px;
   width: 16px;
 }
-.sort__view_lines:hover .sort_view-icon {
-  background: url('../img/icons/views-sa675819b52.png') 0 -172px no-repeat;
+.sort__view_lines:hover .sort__view-icon {
+  background: url('../img/icons/views-sfaf4eff0b0.png') 0 -172px no-repeat;
   height: 16px;
   width: 16px;
 }
-.sort__view_lines.active .sort_view-icon {
-  background: url('../img/icons/views-sa675819b52.png') 0 -172px no-repeat;
+.sort__view_lines.active .sort__view-icon {
+  background: url('../img/icons/views-sfaf4eff0b0.png') 0 -172px no-repeat;
   height: 16px;
   width: 16px;
 }

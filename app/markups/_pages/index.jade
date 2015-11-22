@@ -31,36 +31,38 @@ block content
                                             a(href='#').sort__view-link
                                                 .sort__view-icon
                     .products
+                        - var items = [{name: 'Samsung',imgs: ['img/images/SmsGt.png','img/images/SmSGT-front1.png','img/images/SmSGT-back.png'],options: [['Тип симкарты' , 'Микро-SIM'],['Количество SIM-карт' , '1'],['Цвет' , 'Белый'],['OC' , 'Android'],['Связь 3G' , 'Есть'],['4G(LTE)' , 'Нет'],['GPS-модуль' , 'Есть']],rating:'img/icons/stars/star-hov.png',price: '11200',numbers: ['189238']},{name: 'Nokia',imgs: ['img/images/lumia.png','img/images/lumfont.png','img/images/lumback.png'],options: [['Тип симкарты' , 'Микро-SIM'],['Количество SIM-карт' , '1'],['Цвет' , 'Черный'],['OC' , 'Microsoft'],['Связь 3G' , 'Есть'],['4G(LTE)' , 'Есть'],['GPS-модуль' , 'Есть']],price: '16700',numbers: ['235238']},{name: 'Lumia-430',imgs: ['img/images/Lum-430.png','img/images/lum430font.png','img/images/Lum430back.png'],options: [['Тип симкарты' , 'Нано-SIM'],['Количество SIM-карт' , '2'],['Цвет' , 'Черный'],['OC' , 'Microsoft'],['Связь 3G' , 'Есть'],['4G(LTE)' , 'Есть'],['GPS-модуль' , 'Есть']],price: '10900',numbers: ['371238']},{name: 'FLY',imgs: ['img/images/Fly.png','img/images/FlyFont.png','img/images/FlyBack.png'],options: [['Тип симкарты' , 'SIM'],['Количество SIM-карт' , '1'],['Цвет' , 'Черный'],['OC' , 'Android'],['Связь 3G' , 'Есть'],['4G(LTE)' , 'Нет'],['GPS-модуль' , 'Есть']],price: '9700',numbers: ['177238']},{name: 'Philips',imgs: ['img/images/Phil.png','img/images/PhilFont.png','img/images/PhilBack.png'],options: [['Тип симкарты' , 'Микро-SIM'],['Количество SIM-карт' , '2'],['Цвет' , 'Черный'],['OC' , 'Android'],['Связь 3G' , 'Есть'],['4G(LTE)' , 'Нет'],['GPS-модуль' , 'Нет']],price: '5500',numbers: ['432238']},{name: 'Alcatel',imgs: ['img/images/Alk.png','img/images/AlkFont.png','img/images/AlkBack.png'],options: [['Тип симкарты' , 'Микро-SIM'],['Количество SIM-карт' , '2'],['Цвет' , 'Белый'],['OC' , 'Android'],['Связь 3G' , 'Есть'],['4G(LTE)' , 'Нет'],['GPS-модуль' , 'Есть']],price: '9900',numbers: ['222238']},{name: 'Acer',imgs: ['img/images/Arc.png','img/images/ArcFont.png','img/images/ArcBack.png'],options: [['Тип симкарты' , 'Нано-SIM'],['Количество SIM-карт' , '1'],['Цвет' , 'Серый'],['OC' , 'Android'],['Связь 3G' , 'Есть'],['4G(LTE)' , 'Есть'],['GPS-модуль' , 'Есть']],price: '15200',numbers: ['43538']},{name: 'Hightel',imgs: ['img/images/High.png','img/images/HighFont.png','img/images/HighBack.png'],options: [['Тип симкарты' , 'Микро-SIM'],['Количество SIM-карт' , '3'],['Цвет' , 'Черный'],['OC' , 'Android'],['Связь 3G' , 'Есть'],['4G(LTE)' , 'Есть'],['GPS-модуль' , 'Есть']],price: '14000',numbers: ['1456338']},{name: 'Siemens',imgs: ['img/images/Sens.png','img/images/SensFont.png','img/images/SensBack.png'],options: [['Тип симкарты' , 'Микро-SIM'],['Количество SIM-карт' , '1'],['Цвет' , 'Серый'],['OC' , 'Android'],['Связь 3G' , 'Есть'],['4G(LTE)' , 'Нет'],['GPS-модуль' , 'Есть']],price: '4000',numbers: ['779238']}]
                         ul.products__list#products__list
-                            -for (var i = 0; i < 9; i++)
+                            -each goods in items
                                 li.products__item
                                     .products__item-inner
                                         .products__left
                                             .products__slideshow
                                                 .products__slideshow-block
                                                     a(href="#").products__slideshow-display
-                                                        img(src="http://lorempixel.com/200/200/technics/6" alt="").products__slideshow-img
+                                                        img(src=goods.imgs[0] alt="").products__slideshow-img
                                                     ul.products__slideshow-thumbs
-                                                        - for (var j = 0; j < 3; j++)
+                                                        - each img in goods.imgs
                                                             li.products__slideshow-item
                                                                 a(href="#").product__slideshow-link
-                                                                    img(src="http://lorempixel.com/45/45/technics" + j alt="").products__slideshow-thumb-img
+                                                                    img(src=img alt="").products__slideshow-thumb-img
                                                 .products__article
                                                     .products__article-word Артикул
-                                                    .products__article-num 189238
+                                                    .products__article-num= goods.numbers
                                             .products__desc
-                                                .products__desc-title Samsung FT-I9031I Galaxy S 3
+                                                .products__desc-title= goods.name
                                                 ul.products__desc-options
-                                                    - var options = {'Тип симкарты' : "Micro-SIM", "Количество SIM-карт": "1", "Цвет" : "Белый", "OC" : "Android","Связь 3G" : "Есть", "4G (LTE)" : "Нет", "GPS-модуль" : "Есть"}
+                                                   
                                                     - var index = 0;
-                                                    - for (item in options)
+                                                    
+                                                    - each item in goods.options
                                                         li(class="products__option-item" + (!(index++ % 2) ? ' products__option-item_colored' : ''))
-                                                            .products__option-key= item
-                                                            .products__option-value= options[item]
-                                                div(class = "products__rating" data-rating = "3")
+                                                            .products__option-key= item[0]
+                                                            .products__option-value= item[1]
+                                                div(class="products__rating" data-rating = "3")
                                         .products__right
                                             .products__info
-                                                .products__price 11290
+                                                .products__price= goods.price
                                                     i.rub
                                             .products__info-bottom
                                                 a(href="#").products__buy-btn В корзину
@@ -68,14 +70,14 @@ block content
                                                     | В наличии
                         .pagination
                             ul.pagination__list
-                                li.pagination__item.pagination__item_prev
+                                li.pagination__item.pagination__item_NavLeft
                                     a(href="#").pagination__link
                                         .pagination__mark
                                 - for (var i = 1; i < 4; i++)
                                     li.pagination__item
                                         a(href="#").pagination__link
                                             .pagination__mark= i
-                                li.pagination__item.pagination__item_next
+                                li.pagination__item.pagination__item_NavRight
                                     a(href="#").pagination__link
                                         .pagination__mark
             .attension

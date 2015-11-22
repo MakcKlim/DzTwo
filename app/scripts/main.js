@@ -44,7 +44,7 @@ var SliderWidget = (function(){
             starsArray = [];
         for (var i = 0; i < 5; i++) {
             var
-            StarClassName = (i < ratingAmount) ? '.products__rating-stars-item products__rating-stars-item_filled' : '.products__rating-stars-item';
+            StarClassName = (i < ratingAmount) ? 'products__rating-stars-item products__rating-stars-item_filled' : 'products__rating-stars-item';
             var
             star = $('<li>',{
                 class: StarClassName

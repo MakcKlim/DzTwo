@@ -39,7 +39,19 @@ $socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
 @each $social in $socials {
     .socials__item_#{$social} {
         .socials__icon {
-            @include get-sprite($socials-map, $social)
+
+             &:after {
+                    @include get-sprite($socials-map, $social);
+                    content: "";
+                    @include absolute-center;
+                }
+
+                &:hover {
+                    &:after {
+                        $icon-name: $social + '-hover';
+                        @include get-sprite($socials-map, $icon-name);
+                }
+            }
         }
     }
 

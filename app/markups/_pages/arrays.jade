@@ -1,0 +1,26 @@
+- var items = [{name: 'Samsung',imgs: ['pic1','pic2','pic3'],options: ['тип симкарты :нано','симкарт :1','4g :есть','Fm : нет'],price: '11200',number: 'A71895'},{name: 'Nokia',imgs: ['pic4','pic5','pic6'],options: ['тип симкарты :микро','симкарт :2','4g :нет','Fm : есть'],price: '15200',number: 'd23895'}]
+
+- each goods in items
+  .goods
+      .goods__name
+        =goods.name
+      .goods__price
+        =goods.price
+      .goods__images
+        -each img in goods.imgs
+          img(src=img)
+      .goods__options
+        ul
+          -each option in goods.options
+            li=option
+
+
+
+- var items = [{name: 'Samsung',imgs: ['img/images/SmsGt.png','img/images/SmSGT-front1.png','img/images/SmSGT-back.png'],options: [['Тип симкарты', 'Микро-SIM'],['Количество SIM-карт', '1'],['Цвет', 'Белый'],['OC', 'Android'],['Связь 3G', 'Есть'],['4G(LTE)', 'Нет'],['GPS-модуль', 'Есть']],price: '11200',number: ['189238','235238','371238','177238','432238','222238','43538','1456338','779238']}]
+
+ul.products__desc-options
+-each goods in items
+  -each item in goods.options
+      li
+        .products__option-key= item[0]
+        .products__option-value= item[1]
